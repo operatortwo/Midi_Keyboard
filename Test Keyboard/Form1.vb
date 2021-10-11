@@ -12,6 +12,7 @@
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         mkbd.close()
+        tbMidiMsg.Clear()
     End Sub
 
     Private Sub mkbd_kbEvent(status As Integer, channel As Integer, data1 As Integer, data2 As Integer) Handles mkbd.kbEvent
