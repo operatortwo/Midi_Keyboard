@@ -18,6 +18,8 @@ Private Sub mkbd_kbEvent(status As Integer, channel As Integer, data1 As Integer
 End Sub
 ```
 
+A call to the ``` .show ``` Sub either creates the keyboard window or brings it to the foreground.
+
 ## Notes to Keyboard
 
 There is also the possibility to send note data **to** the keyboard. 
@@ -25,24 +27,25 @@ This can be, for example, used to visualize Midi note data from a Midiplayer to 
 
 ## Changing the size of the keyboard
 
-A 'New' keyboard without any parameters creates a keyboard with default size.
+A 'New' Midi_Keyboard.Main without any parameters creates a keyboard with default size an number of keys.
 The overloading function 'New' with parameters allows the programmer to set the desired size and number of keys. 
 
-The user can also set these parameters at runtime with the 'Settings' menu. This is maybe a bit uncomfortable, after changing the items, the user has to press 'Enter Setting' in order to take over the changes.
+The user can also set these parameters at runtime with the 'Settings' menu. This is maybe a bit uncomfortable. After changing the items, the user has to press 'Enter Setting' in order to take over the changes.
 
 ## Other keyboard elements
 
 - The hold button is a kind of sustain pedal 
 - The channel buttons controls the output channel of the generated note message
-- Pos, Note, NoteNum, Veloc are status labels
+- Pos, Note, NoteNum, Veloc are status labels.
+
 The Velocity of a pressed key depends on the relative y-position on the key. The higher the y-position the higher the velocity
 
-## advantages
+## Advantages
 - fast an easy to implement
 - configurable in size and number of keys
 - floating, can be placed wherever needed
 
-## restrictions
+## Restrictions
 - only 1 note at the same time
 - no chords
 - no arpeggios
