@@ -27,7 +27,7 @@ This can be, for example, used to visualize Midi note data from a Midiplayer to 
 
 ## Changing the size of the keyboard
 
-A 'New' Midi_Keyboard.Main without any parameters creates a keyboard with default size an number of keys.
+A 'New' Midi_Keyboard.Main without any parameters creates a keyboard with default size and number of keys.
 The overloading function 'New' with parameters allows the programmer to set the desired size and number of keys. 
 
 The user can also set these parameters at runtime with the 'Settings' menu. This is maybe a bit uncomfortable. After changing the items, the user has to press 'Enter Setting' in order to take over the changes.
